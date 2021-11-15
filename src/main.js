@@ -18,9 +18,10 @@ app.use(bodyParser.json())
 
 
 //other
+let cards = new Cards()
 
 app.get('/cards', function (req, res){
-    let cards = req.body
+    cards = req.body
     res.end
 })
 
