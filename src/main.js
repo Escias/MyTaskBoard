@@ -18,6 +18,10 @@ app.use(bodyParser.json())
 
 //other
 
+app.get('/cards', function (req, res){
+
+})
+
 app.listen(port, () => {
     logger.log(`API listening at http://localhost:${port}`)
 })
