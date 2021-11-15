@@ -19,7 +19,8 @@ app.use(bodyParser.json())
 //other
 
 app.get('/cards', function (req, res){
-
+    console.log(req.body)
+    res.end
 })
 
 app.listen(port, () => {
