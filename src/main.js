@@ -16,10 +16,11 @@ app.use(bodyParser.json())
 // insert your router here
 
 
+
 //other
 
 app.get('/cards', function (req, res){
-    console.log(req.body)
+    let cards = req.body
     res.end
 })
 
