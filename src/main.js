@@ -14,8 +14,9 @@ app.use(cors())
 app.use(bodyParser.json())
 
 // insert your router here
+var cardsRouter = require('./routes/cards')
 
-
+app.use('/cards', cardsRouter)
 
 //other
 let cards = new Cards()
